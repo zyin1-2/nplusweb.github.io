@@ -1,9 +1,52 @@
-<head>
-  <title>{{ site.title }}</title>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <!--[if lte IE 8]><script src="{{ "js/ie/html5shiv.js" | prepend: site.baseurl }}"></script><![endif]-->
-  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
-  <!--[if lte IE 9]><link rel="stylesheet" href="{{ "assets/css/ie9.css" | prepend: site.baseurl }}" /><![endif]-->
-  <!--[if lte IE 8]><link rel="stylesheet" href="{{ "assets/css/ie8.css" | prepend: site.baseurl }}" /><![endif]-->
-</head>
+<header id="main-header" data-height-onload="66">
+	<div class="container clearfix et_menu_container">
+		<div class="logo_container">
+			<span class="logo_helper"></span>
+			<a href="{{ site.baseurl }}/">
+				<img src="/img/logo.png" alt="NPLUS WEB" id="logo">
+				<!--{{ site.theme.yoursitetitle }}-->
+			</a>
+		</div>
+		<div id="et-top-navigation" data-height="66" data-fixed-height="40">
+			<nav id="top-menu-nav">
+				<ul id="top-menu" class="nav">
+					<li>
+						<a class="page-link" href="{{ site.baseurl }}/">
+							{{ site.theme.hometitle }}
+						</a>
+					</li>
+					{% for page in site.pages %}
+					{% if page.title and page.hide != true %}
+					<li>
+						<a class="page-link" href="{{ page.url | prepend: site.baseurl }}">
+							{{ page.title }}
+						</a>
+					</li>
+					{% endif %}
+					{% endfor %}
+					<!-- Social icons from Font Awesome, if enabled -->
+                    <!--
+					<li>
+						<a class="page-link" href="">Find Me</a>
+						<ul class="children">{% include icons.html %}</ul>
+					</li>
+					-->
+				</ul>
+			</nav>
+
+			<div id="et_mobile_nav_menu">
+				<div class="mobile_nav closed">
+					<span class="select_page"></span>
+					<span class="mobile_menu_bar"></span>
+				</div>
+			</div>				
+		</div> <!-- #et-top-navigation -->
+	</div> <!-- .container -->
+	<div class="et_search_outer">
+		<div class="container et_search_form_container">
+			<form role="search" method="get" class="et-search-form" action="{{ site.url }}">
+			<input type="search" class="et-search-field" placeholder="搜索 &hellip;" value="" name="s" title="搜索：" /></form>
+			<span class="et_close_search_field"></span>
+		</div>
+	</div>
+</header> <!-- #main-header -->
