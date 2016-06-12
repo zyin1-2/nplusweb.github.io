@@ -19,7 +19,7 @@
 <head>
 	<meta charset="utf-8">
 	<title> NPLUS WEB</title>
-	<meta name="description" content="used by search engines">
+	<meta name="description" content="NPLUS WEB">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-Frame-Options" content="sameorigin">
 	<!-- CSS -->
@@ -39,7 +39,8 @@
 	<link href="/favicon.ico" mce_href="favicon.ico" rel="shortcut icon" type="image/x-icon" /> 
 	<!-- Canonical -->
 	<link rel="canonical" href="http://nplusweb.github.io/">
-
+	<!-- Font Awesome -->
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 
 	<body class="home blog et_pb_button_helper_class home-posts et_fixed_nav et_show_nav et_cover_background et_pb_gutter windows et_pb_gutters3 et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_pb_footer_columns4 et_header_style_left et_right_sidebar chrome">
@@ -58,9 +59,17 @@
 				<ul id="top-menu" class="nav">
 					<li>
 						<a class="page-link" href="/">
-							首页
+							Home
 						</a>
 					</li>
+					
+					
+					
+					
+					
+					
+					
+					
 					
 					
 					
@@ -69,7 +78,7 @@
 					
 					<li>
 						<a class="page-link" href="/Archives/">
-							博客
+							Archives
 						</a>
 					</li>
 					
@@ -77,9 +86,21 @@
 					
 					<li>
 						<a class="page-link" href="/About/">
-							关于我们
+							About
 						</a>
 					</li>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
 					
 					
 					
@@ -138,7 +159,7 @@
 
 
 <li>
-	<a href="mailto:sam@example.com" title="Email">
+	<a href="mailto:evan.sang@nplusgroup.com" title="Email">
 		<i class="fa fa-fw fa-envelope"></i>
 	</a>
 </li>
@@ -167,16 +188,57 @@
 
     		<div id="et-main-area">
       			<div class="home">
-  <article class="home-feature-image" >
-  <div style="background-image: url('/img/sample_feature_img.png')"/>
-  <header style="background-image: url('')">
-    <p class="call-out-content"> NPLUS DIGITAL 前端开发组
- </p>
-  </header>
-  </article>
+	<article class="home-feature-image" >
+        <header style="background-image: url('/img/sample_feature_img.jpg')">
+        	<!--<p class="call-out-content"> NPLUS DIGITAL 前端开发组
+ </p>-->
+        </header>
+	</article>
 
 	<div class="posts">
 	
+		
+	
+
+	
+		<div class="post-teaser">
+		  <header>
+		    <h1>
+		      <a id="post-link-trans" class="post-link" href="/blog/webapp-layout-and-adaptation/">
+		        移动web布局和适配
+		      </a>
+		    </h1>
+		    <p id="subtitletrans" class="subtitlecontainer">
+		      <a class="subtitle">2016年06月6日</a>
+		       | <a class="subtitle" href="https://github.com/sangevan">sang</a>
+               |<a class="subtitle">  <i class="fa fa-tag"></i>: <a href="/tags/share/">技术分享</a></a>
+		    </p>
+		  </header>
+		  <div class="excerpt">
+		  	<style>
+h2{ text-align:center; margin:40px 0;}
+</style>
+	<p><h2>页面布局</h2></p>
+    <p><h3>html页面基本结构</h3></p>
+    <p><img src="/img/html.jpg"></p>  
+    <p>
+    <strong>js为什么放文档底部？</strong><br>
+    1、js加载会阻塞其它内容加载，使页面加载时间更长，尤其是js文件太大，有的页面js文件数兆/客户端网速太慢/服务器网速太慢，甚至不能访问等情况。<br> 
+    2、dom操作，页面没提前加载，dom操作会失败，报错。<br>
+    3、搜索引擎优化。
+    </p> 
+	
+
+
+            <p>...</p>
+          	<p>
+		    <a class="text" href="/blog/webapp-layout-and-adaptation/">
+		      查看全文>>
+		    </a>
+		    </p>
+		  </div>
+		</div>
+		
 		
 	
 
@@ -190,18 +252,16 @@
 		    </h1>
 		    <p id="subtitletrans" class="subtitlecontainer">
 		      <a class="subtitle">2016年06月3日</a>
-		       | <a class="subtitle" href="/about/">Author</a>
+		       | <a class="subtitle" href="https://github.com/sangevan">sang</a>
+               |<a class="subtitle">  <i class="fa fa-tags"></i>: <a href="/tags/html/">html</a>, <a href="/tags/css/">css</a>, <a href="/tags/js/">js</a>, <a href="/tags/share/">技术分享</a></a>
 		    </p>
 		  </header>
 		  <div class="excerpt">
-		  
-		  
-		    <style>
-.QAlist dl{margin:30px 0;}
-.QAlist dd{margin:10px 0 0;}
+		  	<style>
+.d{margin:30px 0;}
+.d dd{margin:10px 0 0;}
 </style>
-<div class="QAlist">
-	<dl>
+	<dl class="d">
     	<dt>Q：动画卡顿、不流畅</dt>
         <dd>
         	A：1、js动画换成css3动画<br>
@@ -210,193 +270,34 @@
              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4、适当减少不必要动画
         </dd>
     </dl>
-    <dl>
+    <dl class="d">
     	<dt>Q：translate3d等3d属性渲染动画后出现白屏或闪屏</dt>
         <dd>
         	A：对使用3d属性标签添加样式backface-visibility:hidden;-webkit-backface-visibility:hidden;
         </dd>
     </dl>
-    <dl>
+    <dl class="d">
     	<dt>Q：点击元素出现阴影或遮罩</dt>
         <dd>
         	A：对点击元素添加样式 -webkit-tap-highlight-color:rgba(255,255,255,0);
         </dd>
     </dl>
-    <dl>
-    	<dt>Q：点击元素出现边框</dt>
-        <dd>
-        	A：对点击元素添加样式 outline: none;
-        </dd>
-    </dl>
-    <dl>
-    	<dt>Q：input、textarea输入框出现怪异内阴影</dt>
-        <dd>
-        	A：对元素添加样式 appearance:none;-webkit-appearance:none;
-        </dd>
-    </dl>
-    <dl>
-    	<dt>Q：去掉select标签默认箭头</dt>
-        <dd>
-        	A：对select添加样式 appearance:none;-webkit-appearance:none;
-        </dd>
-    </dl>
-    <dl>
-    	<dt>Q：IOS长按识别二维码BUG</dt>
-        <dd>
-        	A：在页面顶层覆盖一层透明度为0的图片，touchstart显示，touchend隐藏
-        </dd>
-    </dl>
-    <dl>
-    	<dt>Q：事件穿透（穿透层级高的元素，让层级低的元素可以响应事件）</dt>
-        <dd>
-        	A：pointer-events:none;
-        </dd>
-    </dl>
-</div>
-		  
-		  </div>
-		</div>
-		
-		
-	
+    
 
-	
-		<div class="post-teaser">
-		  <header>
-		    <h1>
-		      <a id="post-link-trans" class="post-link" href="/blog/example-post-formatting/">
-		        Example Post Formatting
-		      </a>
-		    </h1>
-		    <p id="subtitletrans" class="subtitlecontainer">
-		      <a class="subtitle">2014年12月15日</a>
-		       | <a class="subtitle" href="/about/">Author</a>
-		    </p>
-		  </header>
-		  <div class="excerpt">
-		  
-		  
-		    <p class="intro"><span class="dropcap">C</span>urabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Vestibulum id ligula porta felis euismod semper. Donec sed odio dui. Aenean lacinia bibendum nulla sed consectetur.</p> <h1>Heading 1</h1> <h2>Heading 2</h2> <h3>Heading 3</h3> <h4>Heading 4</h4> <h5>Heading 5</h5> <h6>Heading 6</h6> <blockquote>Aenean lacinia bibendum nulla sed consectetur. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum. Nulla vitae elit libero, a pharetra augue. Curabitur blandit tempus porttitor. Donec sed odio dui. Cras mattis consectetur purus sit amet fermentum.</blockquote> <p>Nullam quis risus eget urna mollis ornare vel eu leo. Cras mattis consectetur purus sit amet fermentum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p> <h2>Unordered List</h2> <ul> <li>List Item</li> <li>Longer List Item <ul> <li>Nested List Item</li> <li>Nested Item</li> </ul></li> <li>List Item</li> </ul> <h2>Ordered List</h2> <ol> <li>List Item</li> <li>Longer List Item <ol> <li>Nested OL Item</li> <li>Another Nested Item</li> </ol></li> <li>List Item</li> </ol> <h2>Definition List</h2> <dl> <dt>Coffee</dt> <dd>Black hot drink</dd> <dt>Milk</dt> <dd>White cold drink</dd> </dl> <p>Donec id elit non mi porta gravida at eget metus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas faucibus mollis interdum. Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p> <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Curabitur blandit tempus porttitor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec id elit non mi porta gravida at eget metus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p> <p>Maecenas faucibus mollis interdum. Maecenas faucibus mollis interdum. Duis mollis, est non commodo luctus, nisi...
-		    <p>
-		    <a class="text" href="/blog/example-post-formatting/">
-		      Continue Reading...
+
+            <p>...</p>
+          	<p>
+		    <a class="text" href="/blog/QA/">
+		      查看全文>>
 		    </a>
 		    </p>
-		  
-		  </div>
-		</div>
-		
-		
-	
-
-	
-		<div class="post-teaser">
-		  <header>
-		    <h1>
-		      <a id="post-link-trans" class="post-link" href="/blog/featured-image/">
-		        Featured Image
-		      </a>
-		    </h1>
-		    <p id="subtitletrans" class="subtitlecontainer">
-		      <a class="subtitle">2014年12月14日</a>
-		       | <a class="subtitle" href="/about/">Author</a>
-		    </p>
-		  </header>
-		  <div class="excerpt">
-		  
-		  
-		    <p class="intro"><span class="dropcap">L</span>orem ipsum thor smash liege-bastogne-liege landbouwkrediet ombregt krabbe, rouleur derby is for lovers bonk giro gilbert bidon. Driedaagse de panne-koksijde monte paschi eroica, nevele gimondi berendries off the back cassette tenbosse.</p>
-
-<p>Bahamontes lanterne rouge normandie belgium. Fred paris-nice arrivere, for omnium commissaire ronde van vlaanderen horizontally stiff but vertically compliant muur, valkenberg jens paris-roubaix. Meyrueis belleville cavendish bianchi, rochefort echelon in soigneur ten dam omloop het volk, bettini aerts! Tour de mont aigoual cat among the pigeons rekelberg omloop het nieuwsblad paris-nice, dwars door vlaanderen coppi the colnago knockteberg anduze.</p>
-
-<p>Kaperij lanterne rouge musette rund um koln bruges thor smash, geraardsbergen riis petacchi molteni pedaling squares. Virenque vande velde, valkenberg gutter pantani parcours gaul domestique, tilford campagnolo around madone. Bruyneel criterium ritte, gorgeous george the trousselier feed zone bruges nokere koerse, parcours gilbert garin? Anquetil valkenberg bettini cat among the pigeons.</p>
-
-<p>Campagnolo the hors delai de wolf as the toto turns venga venga venga, sanchez nys. Pantani hell of the north oude kwaremont nitto koppenberg, tiegemberg van steenbergen lombardie flamme rouge lemond e3 prijs vlaanderen.</p>
-
-<p>Planckaert berg ter stene freire gorgeous george in rouleur derby, vaughters fabianese omloop het volk rouleur play rouleur derby. Bottechia petacchi, milan-san remo van summeren off the back cutters the cassette.</p>
-
-<p>Nyvelocity pyrenees vande velde merckx. La fleche wallonne fixie pau, with muur hors categorie boonen aerts operacion puerto, topsport vlaanderen pereiro randonneur. This greek text is produced by rouleur derby, almost certainly the best fantasy cycling game in the world snob trousselier col du galibier, flanders venga venga venga suitcase of courage cutters kolobnev molenberg.</p>
-
-		  
-		  </div>
-		</div>
-		
-		
-	
-
-	
-		<div class="post-teaser">
-		  <header>
-		    <h1>
-		      <a id="post-link-trans" class="post-link" href="/blog/image-in-post/">
-		        Image in Post
-		      </a>
-		    </h1>
-		    <p id="subtitletrans" class="subtitlecontainer">
-		      <a class="subtitle">2014年12月11日</a>
-		       | <a class="subtitle" href="/about/">Author</a>
-		    </p>
-		  </header>
-		  <div class="excerpt">
-		  
-		  
-		    <p class="intro"><span class="dropcap">L</span>orem ipsum thor smash liege-bastogne-liege landbouwkrediet ombregt krabbe, rouleur derby is for lovers bonk giro gilbert bidon. Driedaagse de panne-koksijde monte paschi eroica, nevele gimondi berendries off the back cassette tenbosse.</p>
-
-<p>Bahamontes lanterne rouge normandie belgium. Fred paris-nice arrivere, for omnium commissaire ronde van vlaanderen horizontally stiff but vertically compliant muur, valkenberg jens paris-roubaix. Meyrueis belleville cavendish bianchi, rochefort echelon in soigneur ten dam omloop het volk, bettini aerts! Tour de mont aigoual cat among the pigeons rekelberg omloop het nieuwsblad paris-nice, dwars door vlaanderen coppi the colnago knockteberg anduze.</p>
-
-<p><img src="/img/touring.jpg" alt=""> </p>
-
-<p>Kaperij lanterne rouge musette rund um koln bruges thor smash, geraardsbergen riis petacchi molteni pedaling squares. Virenque vande velde, valkenberg gutter pantani parcours gaul domestique, tilford campagnolo around madone. Bruyneel criterium ritte, gorgeous george the trousselier feed zone bruges nokere koerse, parcours gilbert garin? Anquetil valkenberg bettini cat among the pigeons.</p>
-
-<p>Campagnolo the hors delai de wolf as the toto turns venga venga venga, sanchez nys. Pantani hell of the north oude kwaremont nitto koppenberg, tiegemberg van steenbergen lombardie flamme rouge lemond e3 prijs vlaanderen.</p>
-
-<p>Planckaert berg ter stene freire gorgeous george in rouleur derby, vaughters fabianese omloop het volk rouleur play rouleur derby. Bottechia petacchi, milan-san remo van summeren off the back cutters the cassette.</p>
-
-<p>Nyvelocity pyrenees vande velde merckx. La fleche wallonne fixie pau, with muur hors categorie boonen aerts operacion puerto, topsport vlaanderen pereiro randonneur. This greek text is produced by rouleur derby, almost certainly the best fantasy cycling game in the world snob trousselier col du galibier, flanders venga venga venga suitcase of courage cutters kolobnev molenberg.</p>
-
-		  
-		  </div>
-		</div>
-		
-		
-	
-
-	
-		<div class="post-teaser">
-		  <header>
-		    <h1>
-		      <a id="post-link-trans" class="post-link" href="/blog/test-post/">
-		        Test Post
-		      </a>
-		    </h1>
-		    <p id="subtitletrans" class="subtitlecontainer">
-		      <a class="subtitle">2014年12月10日</a>
-		       | <a class="subtitle" href="/about/">Author</a>
-		    </p>
-		  </header>
-		  <div class="excerpt">
-		  
-		  
-		    <p class="intro"><span class="dropcap">L</span>orem ipsum thor smash liege-bastogne-liege landbouwkrediet ombregt krabbe, rouleur derby is for lovers bonk giro gilbert bidon. Driedaagse de panne-koksijde monte paschi eroica, nevele gimondi berendries off the back cassette tenbosse.</p>
-
-<p>Bahamontes lanterne rouge normandie belgium. Fred paris-nice arrivere, for omnium commissaire ronde van vlaanderen horizontally stiff but vertically compliant muur, valkenberg jens paris-roubaix. Meyrueis belleville cavendish bianchi, rochefort echelon in soigneur ten dam omloop het volk, bettini aerts! Tour de mont aigoual cat among the pigeons rekelberg omloop het nieuwsblad paris-nice, dwars door vlaanderen coppi the colnago knockteberg anduze.</p>
-
-<p>Kaperij lanterne rouge musette rund um koln bruges thor smash, geraardsbergen riis petacchi molteni pedaling squares. Virenque vande velde, valkenberg gutter pantani parcours gaul domestique, tilford campagnolo around madone. Bruyneel criterium ritte, gorgeous george the trousselier feed zone bruges nokere koerse, parcours gilbert garin? Anquetil valkenberg bettini cat among the pigeons.</p>
-
-<p>Campagnolo the hors delai de wolf as the toto turns venga venga venga, sanchez nys. Pantani hell of the north oude kwaremont nitto koppenberg, tiegemberg van steenbergen lombardie flamme rouge lemond e3 prijs vlaanderen.</p>
-
-<p>Planckaert berg ter stene freire gorgeous george in rouleur derby, vaughters fabianese omloop het volk rouleur play rouleur derby. Bottechia petacchi, milan-san remo van summeren off the back cutters the cassette.</p>
-
-<p>Nyvelocity pyrenees vande velde merckx. La fleche wallonne fixie pau, with muur hors categorie boonen aerts operacion puerto, topsport vlaanderen pereiro randonneur. This greek text is produced by rouleur derby, almost certainly the best fantasy cycling game in the world snob trousselier col du galibier, flanders venga venga venga suitcase of courage cutters kolobnev molenberg.</p>
-
-		  
 		  </div>
 		</div>
 		
 	</div>
 
 	<div class="wp-pagenavi">
-	    <span class='pages'>第 1 页，共 2 页</span>
+	    <span class='pages'>第 1 页，共 1 页</span>
 
 	    
 
@@ -405,17 +306,14 @@
 	      
 	   
 	    
-	        
-	          <a class="page larger" href="/blog/page2">2</a>
-	        
-	    
 
-	    
-	    	<a class="nextpostslink" rel="next" href="/blog/page2" > » </a>
 	    
 
 	</div>
 </div>
+<script>
+document.getElementById("top-menu").children[0].className="active";
+</script>
     		</div> <!-- #et-main-area -->
 		</div> <!-- #page-container -->
 		
@@ -424,9 +322,9 @@
 
 
 <footer id="page-footer-trans" class="page-footer">
-	<!--<p class="text"><a href="https://www.nplusgroup.com">NPLUS DIGITAL</a> 
+	<!--<p class="text"><a href="https://www.nplusgroup.com">NPLUS DIGITAL</a>
 </p>-->
-	Copyright &copy; 2016 <a href="https://www.nplusgroup.com">NPLUS DIGITAL</a> 
+	Copyright &copy; 2016 <a href="https://www.nplusgroup.com">NPLUS DIGITAL</a>
  All Rights Reserved. 
 	<!--<p class="text">Hosted by <a href="https://github.com">GitHub</a>. Theme created by <a href="https://github.com/fengzhichu/fengzhichu-theme/tree/gh-pages">枫之楚</a></p>-->
 </footer>

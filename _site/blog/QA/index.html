@@ -39,7 +39,8 @@
 	<link href="/favicon.ico" mce_href="favicon.ico" rel="shortcut icon" type="image/x-icon" /> 
 	<!-- Canonical -->
 	<link rel="canonical" href="http://nplusweb.github.io/blog/QA/">
-
+	<!-- Font Awesome -->
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 
 	<body class="home blog et_pb_button_helper_class home-posts et_fixed_nav et_show_nav et_cover_background et_pb_gutter windows et_pb_gutters3 et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_pb_footer_columns4 et_header_style_left et_right_sidebar chrome">
@@ -58,9 +59,17 @@
 				<ul id="top-menu" class="nav">
 					<li>
 						<a class="page-link" href="/">
-							首页
+							Home
 						</a>
 					</li>
+					
+					
+					
+					
+					
+					
+					
+					
 					
 					
 					
@@ -69,7 +78,7 @@
 					
 					<li>
 						<a class="page-link" href="/Archives/">
-							博客
+							Archives
 						</a>
 					</li>
 					
@@ -77,9 +86,21 @@
 					
 					<li>
 						<a class="page-link" href="/About/">
-							关于我们
+							About
 						</a>
 					</li>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
 					
 					
 					
@@ -138,7 +159,7 @@
 
 
 <li>
-	<a href="mailto:sam@example.com" title="Email">
+	<a href="mailto:evan.sang@nplusgroup.com" title="Email">
 		<i class="fa fa-fw fa-envelope"></i>
 	</a>
 </li>
@@ -177,21 +198,20 @@
 
 <!--article  >
   <div style="background-image: url('/')"/>
-  <header style="background-image: url('')"-->
+  <header style="background-image: url('img/sample_feature_img.jpg')"-->
     <h1 class="title">常见问题Q&A</h1>
     <p id="subtitletrans" class="subtitlecontainer">
     <a class="subtitle">2016年06月3日</a>
-     | <a class="subtitle" href="/About/">Author</a>
-	
+     | <a class="subtitle" href="/About/">sang</a>
+	 |<a class="subtitle">  <i class="fa fa-tags"></i>: <a href="/tags/html/">html</a>, <a href="/tags/css/">css</a>, <a href="/tags/js/">js</a>, <a href="/tags/share/">技术分享</a></a>
     </p>
   </header>
   <section class="post-content">
   <style>
-.QAlist dl{margin:30px 0;}
-.QAlist dd{margin:10px 0 0;}
+.d{margin:30px 0;}
+.d dd{margin:10px 0 0;}
 </style>
-<div class="QAlist">
-	<dl>
+	<dl class="d">
     	<dt>Q：动画卡顿、不流畅</dt>
         <dd>
         	A：1、js动画换成css3动画<br>
@@ -200,49 +220,47 @@
              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4、适当减少不必要动画
         </dd>
     </dl>
-    <dl>
+    <dl class="d">
     	<dt>Q：translate3d等3d属性渲染动画后出现白屏或闪屏</dt>
         <dd>
         	A：对使用3d属性标签添加样式backface-visibility:hidden;-webkit-backface-visibility:hidden;
         </dd>
     </dl>
-    <dl>
+    <dl class="d">
     	<dt>Q：点击元素出现阴影或遮罩</dt>
         <dd>
         	A：对点击元素添加样式 -webkit-tap-highlight-color:rgba(255,255,255,0);
         </dd>
     </dl>
-    <dl>
-    	<dt>Q：点击元素出现边框</dt>
+    <dl class="d"><dt>Q：点击元素出现边框</dt>
         <dd>
         	A：对点击元素添加样式 outline: none;
         </dd>
     </dl>
-    <dl>
+    <dl class="d">
     	<dt>Q：input、textarea输入框出现怪异内阴影</dt>
         <dd>
         	A：对元素添加样式 appearance:none;-webkit-appearance:none;
         </dd>
     </dl>
-    <dl>
+    <dl class="d">
     	<dt>Q：去掉select标签默认箭头</dt>
         <dd>
         	A：对select添加样式 appearance:none;-webkit-appearance:none;
         </dd>
     </dl>
-    <dl>
+    <dl class="d">
     	<dt>Q：IOS长按识别二维码BUG</dt>
         <dd>
         	A：在页面顶层覆盖一层透明度为0的图片，touchstart显示，touchend隐藏
         </dd>
     </dl>
-    <dl>
+    <dl class="d">
     	<dt>Q：事件穿透（穿透层级高的元素，让层级低的元素可以响应事件）</dt>
         <dd>
         	A：pointer-events:none;
         </dd>
     </dl>
-</div>
   </section>
   
 </article>
@@ -251,6 +269,31 @@
 
 
 <!-- Disqus -->
+
+<div class="comments">
+  <div id="disqus_thread"></div>
+<script>
+    /**
+     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+     */
+    /*
+    var disqus_config = function () {
+        this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() {  // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        
+        s.src = '//nplusweb.disqus.com/embed.js';
+        
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+</div>
 
 
     		</div> <!-- #et-main-area -->
@@ -261,9 +304,9 @@
 
 
 <footer id="page-footer-trans" class="page-footer">
-	<!--<p class="text"><a href="https://www.nplusgroup.com">NPLUS DIGITAL</a> 
+	<!--<p class="text"><a href="https://www.nplusgroup.com">NPLUS DIGITAL</a>
 </p>-->
-	Copyright &copy; 2016 <a href="https://www.nplusgroup.com">NPLUS DIGITAL</a> 
+	Copyright &copy; 2016 <a href="https://www.nplusgroup.com">NPLUS DIGITAL</a>
  All Rights Reserved. 
 	<!--<p class="text">Hosted by <a href="https://github.com">GitHub</a>. Theme created by <a href="https://github.com/fengzhichu/fengzhichu-theme/tree/gh-pages">枫之楚</a></p>-->
 </footer>

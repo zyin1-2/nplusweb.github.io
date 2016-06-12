@@ -18,8 +18,8 @@
 	
 <head>
 	<meta charset="utf-8">
-	<title>博客 | NPLUS WEB</title>
-	<meta name="description" content="used by search engines">
+	<title>Archives | NPLUS WEB</title>
+	<meta name="description" content="NPLUS WEB">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-Frame-Options" content="sameorigin">
 	<!-- CSS -->
@@ -39,7 +39,8 @@
 	<link href="/favicon.ico" mce_href="favicon.ico" rel="shortcut icon" type="image/x-icon" /> 
 	<!-- Canonical -->
 	<link rel="canonical" href="http://nplusweb.github.io/Archives/">
-
+	<!-- Font Awesome -->
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 
 	<body class="home blog et_pb_button_helper_class home-posts et_fixed_nav et_show_nav et_cover_background et_pb_gutter windows et_pb_gutters3 et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_pb_footer_columns4 et_header_style_left et_right_sidebar chrome">
@@ -58,9 +59,17 @@
 				<ul id="top-menu" class="nav">
 					<li>
 						<a class="page-link" href="/">
-							首页
+							Home
 						</a>
 					</li>
+					
+					
+					
+					
+					
+					
+					
+					
 					
 					
 					
@@ -69,7 +78,7 @@
 					
 					<li>
 						<a class="page-link" href="/Archives/">
-							博客
+							Archives
 						</a>
 					</li>
 					
@@ -77,9 +86,21 @@
 					
 					<li>
 						<a class="page-link" href="/About/">
-							关于我们
+							About
 						</a>
 					</li>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
 					
 					
 					
@@ -138,7 +159,7 @@
 
 
 <li>
-	<a href="mailto:sam@example.com" title="Email">
+	<a href="mailto:evan.sang@nplusgroup.com" title="Email">
 		<i class="fa fa-fw fa-envelope"></i>
 	</a>
 </li>
@@ -166,156 +187,76 @@
 </header> <!-- #main-header -->
 
     		<div id="et-main-area">
-      			<article class="feature-image">
-  	<div style="background-image: url('/img/sample_feature_img.png')"/>
-  	<header style="background-image: url('')">
-    <h1 class="call-out-title">博客</h1>
+      			<article class="home-feature-image">
+    <header style="background-image: url('/img/sample_feature_img.jpg')">
+        <!--<h1 class="call-out-title">Archives</h1>-->
     </header>
 </article>
-
 <article>
-	<section class="post-content"><section id="archive">
+	<section class="post-content"><div class="tabs">
+标签分类：
+
+  <a href="/tags/html" title="html">
+    html
+  </a>
+
+  <a href="/tags/css" title="css">
+    css
+  </a>
+
+  <a href="/tags/js" title="js">
+    js
+  </a>
+
+  <a href="/tags/share" title="share">
+    share
+  </a>
+
+</div>
+<section id="archive">
   
     
       <h3>2016</h3>
       <ul class="this">
     
+      <li><time>06月06日 </time><a href="/blog/webapp-layout-and-adaptation/">移动web布局和适配</a></li>
+  
+    
+      
+      
+      
+    
       <li><time>06月03日 </time><a href="/blog/QA/">常见问题Q&A</a></li>
-  
-    
-      
-      
-      
-        </ul>
-        <h3>2014</h3>
-        <ul class="past">
-      
-    
-      <li><time>12月15日 </time><a href="/blog/example-post-formatting/">Example Post Formatting</a></li>
-  
-    
-      
-      
-      
-    
-      <li><time>12月14日 </time><a href="/blog/featured-image/">Featured Image</a></li>
-  
-    
-      
-      
-      
-    
-      <li><time>12月11日 </time><a href="/blog/image-in-post/">Image in Post</a></li>
-  
-    
-      
-      
-      
-    
-      <li><time>12月10日 </time><a href="/blog/test-post/">Test Post</a></li>
-  
-    
-      
-      
-      
-    
-      <li><time>11月30日 </time><a href="/blog/sample-post/">Sample post</a></li>
-  
-    
-      
-      
-      
-    
-      <li><time>11月29日 </time><a href="/blog/feature-images/">Feature images</a></li>
-  
-    
-      
-      
-      
-        </ul>
-        <h3>2013</h3>
-        <ul class="past">
-      
-    
-      <li><time>12月15日 </time><a href="/blog/example-post-formatting-2013/">Example Post Formatting 2013</a></li>
   
   </ul>
 </section>
-</section>
+
+<script>
+document.getElementById("top-menu").children[1].className="active";
+</script>
+<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script><script>
+document.getElementById("top-menu").children[1].className="active";
+$(function(){
+	$(".tabs a").each(function(){
+		var text=$(this).text().replace(/\s/g,"");
+		var _this=$(this);
+		if(text == "share"){
+			_this.text("技术分享");
+		}else if(text == "summary"){
+			_this.text("项目总结");
+		}else if(text == "study"){
+			_this.text("技术研究");
+		}else if(text == "stone"){
+			_this.text("他山之石");
+		}else if(text == "team"){
+			_this.text("团队活动");
+		}else if(text == "plugin"){
+			_this.text("插件");
+		}
+	})
+})
+</script></section>
 </article>
-<!--article >
-  <header style="background-image: url('/')">
-    <h1 class="call-out-title">博客</h1>
-  </header>
-  <section class="post-content"><section id="archive">
-  
-    
-      <h3>2016</h3>
-      <ul class="this">
-    
-      <li><time>06月03日 </time><a href="/blog/QA/">常见问题Q&A</a></li>
-  
-    
-      
-      
-      
-        </ul>
-        <h3>2014</h3>
-        <ul class="past">
-      
-    
-      <li><time>12月15日 </time><a href="/blog/example-post-formatting/">Example Post Formatting</a></li>
-  
-    
-      
-      
-      
-    
-      <li><time>12月14日 </time><a href="/blog/featured-image/">Featured Image</a></li>
-  
-    
-      
-      
-      
-    
-      <li><time>12月11日 </time><a href="/blog/image-in-post/">Image in Post</a></li>
-  
-    
-      
-      
-      
-    
-      <li><time>12月10日 </time><a href="/blog/test-post/">Test Post</a></li>
-  
-    
-      
-      
-      
-    
-      <li><time>11月30日 </time><a href="/blog/sample-post/">Sample post</a></li>
-  
-    
-      
-      
-      
-    
-      <li><time>11月29日 </time><a href="/blog/feature-images/">Feature images</a></li>
-  
-    
-      
-      
-      
-        </ul>
-        <h3>2013</h3>
-        <ul class="past">
-      
-    
-      <li><time>12月15日 </time><a href="/blog/example-post-formatting-2013/">Example Post Formatting 2013</a></li>
-  
-  </ul>
-</section>
-</section>
-</article-->
 
     		</div> <!-- #et-main-area -->
 		</div> <!-- #page-container -->
@@ -325,9 +266,9 @@
 
 
 <footer id="page-footer-trans" class="page-footer">
-	<!--<p class="text"><a href="https://www.nplusgroup.com">NPLUS DIGITAL</a> 
+	<!--<p class="text"><a href="https://www.nplusgroup.com">NPLUS DIGITAL</a>
 </p>-->
-	Copyright &copy; 2016 <a href="https://www.nplusgroup.com">NPLUS DIGITAL</a> 
+	Copyright &copy; 2016 <a href="https://www.nplusgroup.com">NPLUS DIGITAL</a>
  All Rights Reserved. 
 	<!--<p class="text">Hosted by <a href="https://github.com">GitHub</a>. Theme created by <a href="https://github.com/fengzhichu/fengzhichu-theme/tree/gh-pages">枫之楚</a></p>-->
 </footer>

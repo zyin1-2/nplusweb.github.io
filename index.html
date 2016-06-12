@@ -2,12 +2,11 @@
 layout: default
 ---
 <div class="home">
-  <article class="home-feature-image" >
-  <div style="background-image: url('{{ site.baseurl }}/{{ site.theme.place_holder_image }}')"/>
-  <header style="background-image: url('{{ site.imageurl }}')">
-    <p class="call-out-content"> {{ site.theme.header_text }} </p>
-  </header>
-  </article>
+	<article class="home-feature-image" >
+        <header style="background-image: url('{{ site.baseurl }}/{{site.imageurl }}')">
+        	<!--<p class="call-out-content"> {{ site.theme.header_text }} </p>-->
+        </header>
+	</article>
 
 	<div class="posts">
 	{% for post in paginator.posts %}
@@ -21,21 +20,18 @@ layout: default
 		    </h1>
 		    <p id="subtitletrans" class="subtitlecontainer">
 		      <a class="subtitle">{{ post.date | date: "%Y年%m月%-d日" }}</a>
-		      {% if post.author %} | <a class="subtitle" href="{{ site.baseurl }}/about/">{{ post.author }}</a>{% endif %}
+		      {% if post.author %} | <a class="subtitle" href="{{ post.authorBlog }}">{{ post.author }}</a>{% endif %}
+              {% if post.tags %} |<a class="subtitle">{{ tags_content }}</a>{% endif %}
 		    </p>
 		  </header>
 		  <div class="excerpt">
-		  {% assign num = post.content | number_of_words %}
-		  {% if  num  < site.theme.visiblewords %}
-		    {{ post.content }}
-		  {% else %}
-		    {{ post.content | truncatewords: site.theme.visiblewords }}
-		    <p>
+		  	{{ post.excerpt }}
+            <p>...</p>
+          	<p>
 		    <a class="text" href="{{ post.url | prepend: site.baseurl }}">
 		      {{ site.theme.str_continue_reading }}
 		    </a>
 		    </p>
-		  {% endif %}
 		  </div>
 		</div>
 		{% endfor %}
@@ -68,3 +64,6 @@ layout: default
 
 	</div>
 </div>
+<script>
+document.getElementById("top-menu").children[0].className="active";
+</script>
