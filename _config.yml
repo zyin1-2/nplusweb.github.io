@@ -19,7 +19,7 @@ theme:
   header_text_feature_image: img/sample_feature_img.jpg
   place_holder_image: img/sample_feature_img.jpg
   footer_text: >
-   <a href="https://www.nplusgroup.com">NPLUS DIGITAL</a>
+   <a href="http://www.nplusgroup.com">NPLUS DIGITAL</a>
 
   # Icons
   rss: false
@@ -74,13 +74,6 @@ permalink: blog/:title/
 sechby:
   # category:   #in
   tag:   #with
-
-# BUILD SETTINGS
-markdown: redcarpet
-highlighter: rouge
-sass:
-  sass_dir: _sass
-  style: :compressed
 
 gems:
   - jekyll-paginate
